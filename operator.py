@@ -1,19 +1,17 @@
-x = int(input("Enter first number ===> "))
-y = int(input("Enter second number ===> "))
-z = input("Enter operator + - * / ===> ")
+x = input("Enter first number ===> ")
+y = input("Enter second number ===> ")
+operator = input("Enter operator + - * / ===> ")
 try:
+    x = int(x)
+    y = int(y)
     if operator == "+":
-        result = x + y
-        print("result is ===> ", result)
+        print("result is ===> ", x + y)
     elif operator == "-":
-        result = x - y
-        print("result is ===> ", result)
+        print("result is ===> ", x - y)
     elif operator == "*":
-        result = x * y
-        print("result is ===> ", result)
+        print("result is ===> ", x * y)
     elif operator == "/":
-        result = x / y
-        print("result is ===> ", result)
+        print("result is ===> ", x / y)
     else:
         print("Please type the correct operator")
 except ValueError:
